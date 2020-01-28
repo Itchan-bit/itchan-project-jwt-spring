@@ -1,8 +1,5 @@
 package com.portfolio.sample_project.model;
 
-
-
-
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 
 
@@ -10,7 +7,7 @@ public class JWTAuthenticationToken extends UsernamePasswordAuthenticationToken 
 
 	public String token;
 	
-	public JWTAuthenticationToken(Object principal, Object credentials) {
+	public JWTAuthenticationToken(String token) {
 		super(null, null);
 		
 		this.token = token;
